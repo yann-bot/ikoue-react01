@@ -2,7 +2,7 @@
 interface Props{
     lang?: string
     nom: string;
-    prenom: string;
+    prenom?: string;
     
 }
 
@@ -11,7 +11,7 @@ export default function Bienvenue(props: Props){
     if(lang === 'en'){
         return(
             <div>
-                Welcome {nom} {prenom}
+                Welcome <strong>{nom} {prenom}</strong>
             </div>
         );
     }
@@ -24,7 +24,7 @@ export default function Bienvenue(props: Props){
     }
     return(
         <div>
-            Bienvenue {nom} {prenom}
+              Bienvenue <strong>{nom} {prenom}</strong>
         </div>
     );
     
