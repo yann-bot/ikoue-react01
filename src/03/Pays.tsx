@@ -15,7 +15,7 @@ function Transform(p: Props, index: number) {
             Pays:{p.nom} <br/>  
             Capital: {p.Capital}<br/> 
             Population: {p.population} <br/>
-            drapeau: {p.drapeau}
+            drapeau: <img src={p.drapeau} />
            </div> <br/>
         </div>
     )
@@ -27,7 +27,7 @@ function Transform(p: Props, index: number) {
 
 export default function Pays(){
     const Infopays = [ 
-        {nom: "France",Capital: "Paris",population: 10000000, drapeau:"drapeau1"},
+        {nom: "France",Capital: "Paris",population: 10000000, drapeau:""},
         {nom: "Centrafrique",Capital: "Bangui",population: 600000, drapeau: "drapeau2"},
         {nom: "RDC",Capital: "Kinshassa",population: 30000000, drapeau: "drapeau3"} 
     ]
